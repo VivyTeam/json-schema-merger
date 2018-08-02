@@ -1,0 +1,11 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'me.andrz.jackson:jackson-json-reference-core:0.3.0'
+}
