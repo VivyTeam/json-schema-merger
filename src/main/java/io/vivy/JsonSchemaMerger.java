@@ -12,13 +12,13 @@ public class JsonSchemaMerger {
 
     private static ObjectMapper JSON_MAPPER = new ObjectMapper();
 
-    public static File mergeSchemasToFile(Path schemasDir) {
-        return mergeSchemasToPath(schemasDir).toFile();
+    public static File mergeSchemasToFile(Path targetDir, Path schemasDir) {
+        return mergeSchemasToPath(targetDir, schemasDir).toFile();
     }
 
-    public static Path mergeSchemasToPath(Path schemasDir) {
+    public static Path mergeSchemasToPath(Path targetDir, Path schemasDir) {
         try {
-            Path schemaFile = Files.createTempFile("schema", ".json");
+            Path schemaFile = Files.createTempFile(targetDir, "schema", ".json");
 
             return Files.write(schemaFile, mergeSchemas(schemasDir));
         } catch (Exception e) {
