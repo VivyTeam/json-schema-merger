@@ -8,5 +8,5 @@ repositories {
 
 dependencies {
     compile 'me.andrz.jackson:jackson-json-reference-core:0.3.0'
-    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.6'
+    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.7'
 }
