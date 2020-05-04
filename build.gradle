@@ -8,7 +8,7 @@ repositories {
 
 dependencies {
     compile 'me.andrz.jackson:jackson-json-reference-core:0.3.0'
-    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.10.3'
+    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.0'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
